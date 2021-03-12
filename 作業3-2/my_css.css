@@ -1,0 +1,154 @@
+.head_box{ 
+    display:flex;
+}
+.head_table1{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color:rgb(3, 3, 3);
+    font-weight:bold;
+    font-size:20px;
+    width:200px;
+    line-height:68px;
+}
+.head_table2{
+    flex:auto;
+}
+.head_table3{
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-end;
+    color:rgb(3, 3, 3);
+    font-weight:bold;
+    font-size:20px;
+    padding:10px;
+    width:400px;
+}
+.head_table3_content{
+    color:rgb(3, 3, 3);
+    font-weight:bold;
+    font-size:20px;
+    padding:10px;
+}
+
+.change_img{
+    display: none; 
+    margin-left: auto;
+} 
+
+.change_img:hover {
+    background-color: #ddd;
+    color: black;
+  }
+.middle_box{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #B0D8FF;
+    height: 300px;
+    color:rgb(3, 3, 3);
+    font-weight:bold;
+    font-size:40px;   
+    padding: 10px;
+}
+.middle_box_1{
+    display:flex;
+    justify-content:space-around;
+    align-items: center;
+    
+}
+
+.box_div {
+    display:flex; 
+    justify-content:space-around ;
+    align-content: center;
+    max-width:1200px;
+    padding-top:20px; 
+    margin:0% auto ;
+    flex-wrap: wrap;
+} 
+
+.box_div2 {
+    padding:0% auto;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 23%;
+    margin:1%;
+    border-color:brown;
+}
+
+
+.pic{
+    /* object-fit: cover;
+    object-position: 0% 0%;  */
+    position: relative;
+    max-width: 100%;
+    /* padding-top: 100%; */
+    padding-top: 70%;
+}
+
+.pic img{
+        /* width: 100%;  */
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+} 
+
+.caption{
+    margin-top:-1px;
+    padding: 10% auto; 
+    width:100% ;
+    height:30px ;
+    background-color: #B0D8FF;
+    color:black;
+    /* justify-content:space-around;
+    align-items: center; */
+    text-align: center;
+    font-weight:bold;
+    line-height:30px;
+} 
+
+@media screen and (max-width:1200px){
+    .head_box{
+        max-width: 100%;
+    }
+    .middle_box{
+        max-width: 100%;
+    } 
+    .box_div{
+        max-width: 90%;
+    }
+    .box_div2{
+        flex: 45%;
+        max-width: 45%;
+        align-content: center;
+    }
+    
+}
+@media screen and (max-width:600px){
+    .head_box{
+        max-width: 100%;
+    }
+    .middle_box{
+        max-width: 100%;
+    } 
+    .box_div{
+        max-width: 90%;
+    }
+    .box_div2{
+        flex: 90%;
+        max-width: 90%;
+        align-content: center;
+        }
+    
+    .head_table3_content{
+        display:none;
+        } 
+    .change_img{
+        display:block;
+        }
+   
+}
+
