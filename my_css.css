@@ -72,20 +72,29 @@
     padding:0% auto;
     align-items: center;
     flex-wrap: wrap;
-    max-width: 23%;
+    width: 23%;
     margin:1%;
     border-color:brown;
 }
-.box_div2 img{
-    width: 100%;
-    height: 220px;   
-} 
 
-.box_div2>.pic{
+
+.pic{
+    /* object-fit: cover;
+    object-position: 0% 0%;  */
+    position: relative;
     max-width: 100%;
-    height: 220px;  
-    object-fit: cover; 
+    /* padding-top: 100%; */
+    padding-top: 70%;
 }
+
+.pic img{
+        /* width: 100%;  */
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+} 
 
 .caption{
     margin-top:-5px;
@@ -112,11 +121,6 @@
         flex: 45%;
         max-width: 45%;
         align-content: center;
-    }
-    .box_div2.pic{
-        object-fit: fill;
-        object-position: 50% 50%;
-        align-items: center;
     }
     
 }
