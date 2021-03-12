@@ -20,7 +20,7 @@ function myFunction() {
       req.send();
   
       function place(jsonObj){
-        while (i<10){
+        while (i<20){
               var id_name_caption="content_"+i;
               var id_content=document.getElementById(id_name_caption);
               var place_name=document.createElement('div')
